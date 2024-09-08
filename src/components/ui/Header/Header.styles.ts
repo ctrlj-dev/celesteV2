@@ -20,7 +20,7 @@ const HeaderNav = styled.nav`
 const HeaderMenu = styled.ul`
   & li {
     display: inline-block;
-    margin-right: 8px;
+    margin-right: ${({ theme }) => theme.spacing.large};
 
     &:last-child {
       margin-right: 0;
@@ -28,4 +28,14 @@ const HeaderMenu = styled.ul`
   }
 `;
 
-export { HeaderMenu, HeaderNav, HeaderRoot };
+const Test = styled.div`
+  height: 50vh;
+  margin: 48px auto;
+  border: ${({ theme }) => theme.border.small};
+  max-width: calc(80% - 8px);
+  border-radius: ${({ theme }) => theme.borderRadius.large};
+  background-color: ${({ theme }) => theme.colors.secondary[500]};
+`;
+
+export { HeaderMenu, HeaderNav, HeaderRoot, Test };
+
