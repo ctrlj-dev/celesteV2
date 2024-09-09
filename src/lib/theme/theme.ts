@@ -1,5 +1,8 @@
 // theme.ts
 
+import { spacing } from '../utils/spacing';
+
+
 const theme = {
   colors: {
     primary: {
@@ -24,7 +27,7 @@ const theme = {
       200: '#ffcc80',
       300: '#ffb74d',
       400: '#ffa726',
-      500: '#F2BE7E', // Color secundario personalizado
+      500: '#F2BE7E',
       600: '#fb8c00',
       700: '#f57c00',
       800: '#ef6c00',
@@ -40,7 +43,7 @@ const theme = {
       200: '#f48fb1',
       300: '#f06292',
       400: '#ec407a',
-      500: '#A6656A', // Acento 1 personalizado
+      500: '#A6656A',
       600: '#e91e63',
       700: '#d81b60',
       800: '#c2185b',
@@ -56,7 +59,7 @@ const theme = {
       200: '#ce93d8',
       300: '#ba68c8',
       400: '#ab47bc',
-      500: '#F2D0A7', // Acento 2 personalizado
+      500: '#F2D0A7',
       600: '#8e24aa',
       700: '#7b1fa2',
       800: '#6a1b9a',
@@ -75,11 +78,13 @@ const theme = {
     secondary: 'Georgia, serif',
   },
   fontSizes: {
-    small: '12px',
-    medium: '16px',
+    small: '16px',
+    medium: '21px',
     large: '24px',
   },
   spacing: {
+    custom: spacing,
+    default: 4,
     small: '8px',
     medium: '16px',
     large: '20px',
@@ -87,16 +92,21 @@ const theme = {
   },
   border: {
     small: `1px solid #000000`,
+    hover: '4px solid',
   },
   borderRadius: {
-    small: '4px',
-    medium: '8px',
+    small: '8px',
+    medium: '12px',
     large: '16px',
   },
   shadows: {
+    hover: 'black 3px 3px 0',
     small: '0px 1px 3px rgba(0, 0, 0, 0.12)',
     medium: '0px 3px 6px rgba(0, 0, 0, 0.16)',
     large: '0px 10px 20px rgba(0, 0, 0, 0.19)',
+  },
+  effects: {
+    transform: 'rotate(-45deg) translateX(2px)',
   },
 };
 

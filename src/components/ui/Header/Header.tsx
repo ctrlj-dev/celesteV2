@@ -16,8 +16,8 @@ const Header: FC = () => {
             <li>Contacto</li>
           </HeaderMenu>
           <div>
-            <Button endAdornment={MdArrowForward} size="small">
-              Sube tus fotos
+            <Button endAdornment={MdArrowForward} $size="small">
+              Súbe tus fotos
             </Button>
           </div>
         </HeaderNav>
